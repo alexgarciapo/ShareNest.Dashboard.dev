@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap">
+  <link rel="stylesheet" href="css/boxicons.min.css">
+
+  <link rel='stylesheet' href='css/tailwind.css'/>
+
+  <title>Activities | ShareNest</title>
+
+</head>
+
+<body class="overflow-x-hidden font-sans antialiased text-gray-900 bg-gray-100">
+
+  <main>
+
+    <header
+      class="fixed top-0 z-50 flex items-center justify-between w-full h-20 px-4 py-3 bg-white border-b-2 xl:px-8">
+      <button type="button" class="block text-3xl leading-none md:hidden">
+        <i class="flex items-center justify-center bx bx-menu"></i>
+      </button>
+
+      <a href='dashboard.index.html' title='ShareNest' class>
+        <img src="images/logo.png" alt="ShareNest" class="">
+      </a>
+
+      <div class="flex items-center">
+        <a href="#" title="" class="hidden text-2xl text-gray-500 hover:text-gray-700 md:block">
+          <i class="flex items-center justify-center bx bx-help-circle"></i>
+        </a>
+
+        <button type="button" class="flex items-center inline-block ml-0 leading-none md:ml-8">
+          <img src="images/uniceflogo.png" alt="" class="object-cover w-10 h-10 overflow-hidden rounded-full lg:w-8 lg:h-8">
+          <span class="hidden ml-3 font-medium md:block">UNICEF</span>
+          <i class="flex items-center justify-center hidden ml-2 text-gray-500 bx bx-chevron-down md:block"></i>
+        </button>
+      </div>
+    </header>
+
+    <aside class="fixed inset-y-0 left-0 z-40 hidden w-24 h-full bg-white border-r-2 md:block">
+      <nav class="flex-col flex-wrap py-24 text-center">
+        <a href='dashboard.index.html' title='Home' class='nav-item'>
+          <i class="text-2xl bx bxs-grid-alt"></i>
+          <span class="sr-only">Home</span>
+        </a>
+        <a href="#" title="" class="nav-item">
+          <i class="text-2xl bx bx-list-ul"></i>
+          <span class="sr-only"></span>
+        </a>
+        <a href='dashboard.activities.html' title='Activities' class='nav-item active'>
+          <i class="text-2xl bx bx-chart"></i>
+          <span class="sr-only">Activities</span>
+        </a>
+        <a href='dashboard.photos.html' title='Photos' class='nav-item'>
+          <i class="text-2xl bx bx-photo-album"></i>
+          <span class="sr-only">Photos</span>
+        </a>
+        <a href='dashboard.ranking.html' title='Ranking' class='nav-item'>
+          <i class="text-2xl bx bxs-bar-chart-alt-2"></i>
+          <span class="sr-only">Ranking</span>
+        </a>
+        <a href='dashboard.graphs.html' title='Graphs of Impact' class='nav-item'>
+          <i class="text-2xl bx bxs-pie-chart-alt-2"></i>
+          <span class="sr-only">Graphs of Impact</span>
+        </a>
+        <a href='dashboard.reports.html' title='Reports' class='nav-item'>
+          <i class="text-2xl bx bxs-dashboard"></i>
+          <span class="sr-only">Reports</span>
+        </a>
+      </nav>
+    </aside>
+
+    <section class="mt-20 md:ml-24">
+      <div class="p-4 bg-white border-b-2 md:p-6 lg:p-8">
+        <div class="items-center justify-between md:flex">
+          <h1 class="text-2xl font-semibold md:w-1/2">Activities</h1>
+
+          <div class="relative mt-4 md:mt-0">
+            <i
+              class="absolute inset-y-0 left-0 flex items-center justify-center ml-4 text-2xl text-orange-500 bx bx-search"></i>
+            <input type="search" id="" name="" placeholder="Search here" class="pl-12 w-84 form-input lg:max-w-sm">
+          </div>
+        </div>
+
+        <div class="mt-6 -mb-4 md:-mb-6 lg:-mb-8">
+          <!-- tabs -->
+          <ul class="flex items-center tabs">
+            <li data-tab="recent" title="" class="nav-tabs current">Recent Activities</li>
+            <li data-tab="upcoming" title="" class="nav-tabs">Upcoming Activities</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p-4 md:p-6 lg:p-8">
+
+        <!-- start recent activities tab -->
+        <div class="tab-content current" id="recent">
+          <div class="flex items-center mb-6 -mx-2">
+            <button type="button"
+                    class="px-4 py-3 mx-2 font-medium leading-none text-white bg-blue-500 rounded hover:bg-blue-600 focus:bg-blue-600">Show
+              All</button>
+            <button type="button"
+                    class="px-4 py-3 mx-2 font-medium leading-none text-white bg-green-500 rounded hover:bg-green-600 focus:bg-green-600">Show
+              Validated</button>
+            <button type="button"
+                    class="px-4 py-3 mx-2 font-medium leading-none text-white bg-yellow-500 rounded hover:bg-yellow-600 focus:bg-yellow-600">Show
+              Pendings</button>
+          </div>
+          <div class="relative p-4 bg-white border rounded md:p-6 " >
+
+          <div class="absolute inset-x-0 top-0 w-full h-1 bg-orange-500"></div>
+
+          <div class="flex items-center justify-end mt-2">
+            <a href="#"
+              class="font-semibold leading-none underline hover:text-orange-600" style="margin-right: 15px">Select
+              All</a>
+            <a href="dashboard.activities.details.html"
+              class="font-semibold leading-none text-orange-500 underline hover:text-orange-600">All Details</a>
+          </div>
+
+          <div class="mt-4 overflow-x-auto">
+
+            <table class="w-full text-sm text-left border-collapse table-auto md:text-base">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Name of User</th>
+                  <th>Task</th>
+                  <th>Cause</th>
+                  <th>Skill</th>
+                  <th># of Volunteers</th>
+                  <th># of people impacted</th>
+                  <th>Total hours</th>
+                  <th>Validate</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                    <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                    <button type="button"
+                      class="px-4 py-2 font-medium leading-none text-white bg-green-500 rounded hover:bg-green-600 focus:bg-green-600">Hours
+                      Validated</button>
+                  </td>
+                  <td>
+                   <a href="#" class="img-20">
+                      <img src="images/grey.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                    <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                     <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                    <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                     <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                     <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                     <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                     <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                   <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>25/11/2019</td>
+                  <td>John Doe</td>
+                  <td>Task Name</td>
+                  <td>Cause Name</td>
+                  <td>Skill Name</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>
+                     <label class="inline-flex items-center">
+                      <input type="radio" class="w-5 h-5 text-orange-500 form-radio" name="" value="">
+                      <span class="sr-only">Validate</span>
+                    </label>
+                  </td>
+                  <td>
+                    <a href="#" class="img-20">
+                      <img src="images/orange.png">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+            <div class="flex items-center justify-end mt-2">
+              <a href="#"
+                 class="font-semibold leading-none text-orange-500 underline hover:text-orange-600" style="margin-right: 15px">Validate</a>
+              <a href="#"
+                 class="font-semibold leading-none text-orange-500 underline hover:text-orange-600">Delete</a>
+            </div>
+        </div>
+        </div>
+        <!-- end recent activities tab -->
+
+        <!-- start upcoming activities tab -->
+        <div class="relative p-4 bg-white border rounded md:p-6 tab-content" id="upcoming">
+          <div class="absolute inset-x-0 top-0 w-full h-1 bg-orange-500"></div>
+          <div class="overflow-x-auto">
+            <table class="w-full -mt-2 text-sm text-left border-collapse table-auto md:-mt-4 md:text-base">
+              <thead>
+                <tr>
+                  <th>Photo</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Phone Number</th>
+                  <th>Email Address</th>
+                  <th>Community</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img src="images/img%206.png" alt="" class="object-cover w-8 h-8 overflow-hidden rounded-full">
+                  </td>
+                  <td>John Doe</td>
+                  <td>28</td>
+                  <td>Male</td>
+                  <td>+0123456789</td>
+                  <td>johndoe@xyz.com</td>
+                  <td>Community Details</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end upcoming activities tab -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- jquery -->
+  <script src='js/jquery-3.4.1.min.js'></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+      })
+
+    })
+  </script>
+
+
+</body>
+
+</html>

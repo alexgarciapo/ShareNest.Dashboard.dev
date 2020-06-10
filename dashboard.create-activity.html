@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap">
+  <link rel="stylesheet" href="css/boxicons.min.css">
+
+  <link rel='stylesheet' href='css/tailwind.css'/>
+
+  <title>Create Activity | ShareNest</title>
+
+</head>
+
+<body class="overflow-x-hidden font-sans antialiased text-gray-900 bg-gray-100">
+
+  <main>
+
+    <header
+      class="fixed top-0 z-50 flex items-center justify-between w-full h-20 px-4 py-3 bg-white border-b-2 xl:px-8">
+      <button type="button" class="block text-3xl leading-none md:hidden">
+        <i class="flex items-center justify-center bx bx-menu"></i>
+      </button>
+
+      <a href='dashboard.index.html' title='ShareNest' class>
+        <img src="images/logo.png" alt="ShareNest" class="">
+      </a>
+
+      <div class="flex items-center">
+        <a href="#" title="" class="hidden text-2xl text-gray-500 hover:text-gray-700 md:block">
+          <i class="flex items-center justify-center bx bx-help-circle"></i>
+        </a>
+
+        <button type="button" class="flex items-center inline-block ml-0 leading-none md:ml-8">
+          <img src="images/uniceflogo.png" alt="" class="object-cover w-10 h-10 overflow-hidden rounded-full lg:w-8 lg:h-8">
+          <span class="hidden ml-3 font-medium md:block">UNICEF</span>
+          <i class="flex items-center justify-center hidden ml-2 text-gray-500 bx bx-chevron-down md:block"></i>
+        </button>
+      </div>
+    </header>
+
+    <aside class="fixed inset-y-0 left-0 z-40 hidden w-24 h-full bg-white border-r-2 md:block">
+      <nav class="flex-col flex-wrap py-24 text-center">
+        <a href='dashboard.index.html' title='Home' class='nav-item'>
+          <i class="text-2xl bx bxs-grid-alt"></i>
+          <span class="sr-only">Home</span>
+        </a>
+        <a href="#" title="" class="nav-item">
+          <i class="text-2xl bx bx-list-ul"></i>
+          <span class="sr-only"></span>
+        </a>
+        <a href='dashboard.activities.html' title='Activities' class='nav-item active'>
+          <i class="text-2xl bx bx-chart"></i>
+          <span class="sr-only">Activities</span>
+        </a>
+        <a href='dashboard.photos.html' title='Photos' class='nav-item'>
+          <i class="text-2xl bx bx-photo-album"></i>
+          <span class="sr-only">Photos</span>
+        </a>
+        <a href='dashboard.ranking.html' title='Ranking' class='nav-item'>
+          <i class="text-2xl bx bxs-bar-chart-alt-2"></i>
+          <span class="sr-only">Ranking</span>
+        </a>
+        <a href='dashboard.graphs.html' title='Graphs of Impact' class='nav-item'>
+          <i class="text-2xl bx bxs-pie-chart-alt-2"></i>
+          <span class="sr-only">Graphs of Impact</span>
+        </a>
+        <a href='dashboard.reports.html' title='Reports' class='nav-item'>
+          <i class="text-2xl bx bxs-dashboard"></i>
+          <span class="sr-only">Reports</span>
+        </a>
+      </nav>
+    </aside>
+
+    <section class="p-4 mt-20 md:p-6 lg:p-8 md:ml-24">
+      <div class="p-6 bg-white border rounded md:p-8 lg:p-12">
+        <form action="#">
+          <div class="items-start lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Organization<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <input type="text" name="" id="" class="block w-full form-input" placeholder="Organization Name" />
+              <span class="block mt-2 text-sm text-gray-600">Leave it blank if there is no organization behind this
+                activity.</span>
+            </div>
+          </div>
+
+          <div class="items-start mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block text-gray-700 lg:mt-1">Cause<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <select class="block w-full mt-1 lg:max-w-lg form-select">
+                <option value="">Select Cause</option>
+		<option value="1" >Animal Rights</option>
+                <option value="2" >Arts & Culture</option>
+                <option value="3" >Civil Rights & Equality</option>
+                <option value="4" >Disaster Relief</option>
+                <option value="5" >Diseases Prevention & Research</option>
+                <option value="6" >Drug Abuse Prevention & Treatment</option>
+                <option value="7" >Eldercare</option>
+                <option value="8" >Environmental Conservancy</option>
+                <option value="9" >Hunger & Homeless</option>
+                <option value="10" >Religion & Spirituality</option>
+                <option value="11" >Sports & Athletics</option>
+                <option value="12" >Youth Development & Education</option>
+		<option value="13" >Others</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="items-start mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Location<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <input type="text" name="" id="" class="block w-full form-input" placeholder="Address" />
+
+              <div class="flex flex-wrap items-center px-4 py-3 mt-2 bg-white border rounded">
+                <div class="w-1/2 pb-3 border-r lg:w-1/4 lg:pb-0">
+                  <input type="text" name="" id="" class="block w-full" placeholder="City" />
+                </div>
+                <div class="w-1/2 pb-3 lg:border-r lg:w-1/4 lg:pb-0">
+                  <input type="text" name="" id="" class="block w-full pl-4" placeholder="State" />
+                </div>
+                <div class="w-1/2 pt-4 border-t border-r lg:w-1/4 lg:mt-0 lg:border-t-0 lg:pt-0">
+                  <input type="text" name="" id="" class="block w-full lg:pl-4" placeholder="Postel Code" />
+                </div>
+                <div class="w-1/2 pt-4 border-t lg:w-1/4 lg:mt-0 lg:border-0 lg:pt-0">
+                  <input type="text" name="" id="" class="block w-full pl-4" placeholder="Country" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Supervisor's Name<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <input type="text" name="" id="" class="block w-full form-input" placeholder="Name" />
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Supervisor's Email<span
+                  class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <input type="email" name="" id="" class="block w-full form-input" placeholder="Email" />
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Supervisor's Phone Number<span
+                  class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <input type="tel" name="" id="" class="block w-full form-input" placeholder="Phone Number" />
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:-mx-4 lg:flex">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Task<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <input type="text" name="" id="" class="block w-full form-input"
+                placeholder="Shot Description Activity i.e. Beach Cleanup" />
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Skill Needed<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <div class="items-center -mx-4 lg:flex">
+                <div class="px-4 lg:w-1/2">
+                  <select class="block w-full mt-1 form-select">
+                    <option value="">Select Skill</option>
+		      <option value="">Area of Expertise/Soft Skills</option>
+                      <option value="1">Communication</option>
+                      <option value="2">Creativity</option>
+                      <option value="3">Empathy</option>
+                      <option value="4">Flexibility/Adaptability</option>
+                      <option value="5">Leadership</option>
+                      <option value="6">Problem Solving</option>
+                      <option value="7">Teamwork</option>
+                      <option value="8">Time Management</option>
+                      <option value="9">Work Ethic</option>
+                  </select>
+                </div>
+                <div class="items-center px-4 mt-6 lg:w-1/2 lg:flex lg:mt-0">
+                  <label for="" class="inline-block text-gray-700">Type<span class="text-orange">*</span></label>
+                  <select class="inline-block w-full mt-2 lg:ml-6 form-select">
+                    <option value="">Select</option>
+ 		      <option value="">Online</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">When<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <div class="items-center lg:flex lg:-mx-4">
+                <div class="lg:w-1/4 lg:px-4">
+                  <label for="" class="block mt-1 text-sm text-gray-700">Start</label>
+                  <div class="flex items-center px-4 py-3 mt-1 bg-white border rounded">
+                      <input type="text" name="" id="" class="block w-full" placeholder="DD/MM/YY" />
+                  </div>
+                </div>
+                <div class="lg:w-1/4 lg:px-4">
+                  <label for="" class="block mt-1 text-sm text-gray-700">End</label>
+                  <div class="flex items-center px-4 py-3 mt-1 bg-white border rounded">
+                      <input type="text" name="" id="" class="block w-full" placeholder="DD/MM/YY" />
+                  </div>
+                </div>
+
+                <div class="mt-4 lg:w-1/4 lg:px-4 lg:mt-0">
+                  <label for="" class="block mt-1 text-sm text-gray-700">start</label>
+                  <div class="flex items-center px-4 py-3 mt-1 bg-white border rounded">
+                      <input type="text" name="" id="" class="block w-full pl-4" placeholder="HH:MM:SS" />
+                  </div>
+                </div>
+                <div class="mt-4 lg:w-1/4 lg:px-4 lg:mt-0">
+                  <label for="" class="block mt-1 text-sm text-gray-700">end</label>
+                  <div class="flex items-center px-4 py-3 mt-1 bg-white border rounded">
+                      <input type="text" name="" id="" class="block w-full pl-4" placeholder="HH:MM:SS" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-center mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block text-gray-700">Time Zone<span class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <select class="inline-block w-full form-select">
+                <option value="">(GMT -6.00) Central Time (US&Canada)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="items-start mt-6 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              <label for="" class="block mt-1 text-gray-700">Participants Needed<span
+                  class="text-orange">*</span></label>
+            </div>
+            <div class="mt-2 lg:w-4/5 lg:mt-0 lg:px-4">
+              <select class="inline-block w-full lg:max-w-lg form-select">
+                <option value="">20</option>
+              </select>
+              <span class="block mt-2 text-sm text-gray-600">Maximum number of people needed</span>
+            </div>
+          </div>
+
+          <div class="items-start mt-2 lg:mt-8 lg:flex lg:-mx-4">
+            <div class="lg:w-1/5 lg:px-4">
+              &nbsp;
+            </div>
+            <div class="lg:w-4/5 lg:px-4">
+              <button type="submit"
+                class="inline-block w-full px-10 py-4 text-sm font-medium tracking-wider text-white uppercase bg-orange-500 rounded lg:w-auto hover:bg-orange-600 focus:bg-orange-600">Create
+                Activity</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+</body>
+
+</html>

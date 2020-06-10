@@ -1,0 +1,303 @@
+$font-family-sans-serif: Raleway,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol,
+    Noto Color Emoji;
+
+$spacer: .25rem;
+$border-width: 2px;
+$border-radius: .25rem;
+
+$theme-colors: ("primary": #0074d9,
+    "danger": #ff4136,
+    "black-200" : #000,
+    "blue-500": #4b89dc,
+    "blue-600": #447bc6,
+    "gray-100": #f4f5f7,
+    "gray-200": #e5e7eb,
+    "gray-300": #d2d6dc,
+    "gray-400": #9fa6b2,
+    "gray-500": #6b7280,
+    "gray-600": #4b5563,
+    "gray-700": #374151,
+    "gray-800": #8b929d,
+    "gray-900": #161e2e,
+    "green-500":#8ec14b,
+    "green-600":#80ae44,
+    "red-200":#f00,
+    "red-500":#f05252,
+    "red-600":#e02424,
+    "orange-100": #ffece6,
+    "orange-500": #fe4308,
+    "orange-600": #e53c07,
+    "yellow-500": #f6bb43,
+);
+
+@import "bootstrap";
+
+@mixin spacing() {
+
+    @for $i from 1 through 40 {
+        $calc: $i * $spacer;
+        #{'.h'}-#{$i} {
+            height: $calc;
+        }
+        #{'.p'}-#{$i} {
+            padding: $calc;            
+        }
+        #{'.px'}-#{$i} {
+            padding-left: $calc;
+            padding-right: $calc;
+        }
+        #{'.py'}-#{$i} {
+            padding-top: $calc;
+            padding-bottom: $calc;
+        }
+        #{'.pr'}-#{$i} {           
+            padding-right: $i * $spacer;
+        }
+        #{'.pl'}-#{$i} {           
+            padding-left: $i * $spacer;
+        }
+        #{'.pt'}-#{$i} {           
+            padding-right: $i * $spacer;
+        }
+        #{'.pb'}-#{$i} {           
+            padding-left: $i * $spacer;
+        }
+        #{'.w'}-#{$i} {
+            width: $calc;
+        }
+        #{'.m'}-#{$i} {
+            margin: $calc;            
+        }
+        #{'.mx'}-#{$i} {
+            margin-left: $calc;
+            margin-right: $calc;
+        }
+        #{'.my'}-#{$i} {
+            margin-top: $calc;
+            margin-bottom: $calc;
+        }
+        #{'.mr'}-#{$i} {           
+            margin-right: $i * $spacer;
+        }
+        #{'.ml'}-#{$i} {           
+            margin-left: $i * $spacer;
+        }
+        #{'.mt'}-#{$i} {           
+            margin-top: $i * $spacer;
+        }
+        #{'.mb'}-#{$i} {           
+            margin-bottom: $i * $spacer;
+        }
+    }
+}
+
+.actfrm .form-input, .actfrm .form-select {
+    
+    height: 58px;
+ font-size: 20px;
+}
+
+#search{
+    height: auto;
+    font-size: 22px;
+}
+
+@include spacing();
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #d2d6dc;
+}
+
+
+.border-b-2{
+    border-bottom-width: $border-width;
+}
+
+.block {
+    font-size: 22px;
+    font-weight: 500;
+    color: #434a54;
+}
+
+.border-gray-200 {
+    border-color: #e5e7eb
+}
+button {
+    background-color: transparent;
+    background-image: none;
+    padding: 0
+}
+.font-medium {
+    font-weight: 500
+}
+
+.h-full {
+    height: 100%
+}
+
+leading-none {
+    line-height: 1
+}
+
+.max-w-screen-2xl {
+    max-width: 92%
+}
+
+.modal-act-dialog, .modal-coming-dialog {
+    max-width: 40rem;
+}
+.modal-act-dialog,
+.modal-coming-dialog{
+    max-width: 40rem;
+}
+
+.modal-act .attach{
+    background-color: #d2d6dc;
+    text-decoration: none;
+}
+
+.modal-act .content-textarea{
+    font-size: 13px;
+    color: #6b7280;    
+    border: 2px solid #e5e7eb;
+    border-radius: .3rem;
+}
+
+.modal-act .stars-1,
+.modal-act .stars-2
+ {
+    color: #d2d6dc;
+    height: 1.25rem;
+    width: 1.25rem;
+    cursor: pointer;
+}
+
+.modal-act .feel {
+    color: #d2d6dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-act textarea{  
+    font-size: 13px;  
+    resize: none;
+}
+
+.modal-act .text-feel {
+    font-size: .875rem;
+    color: #d2d6dc;
+}
+
+#modal-acty-pending .home,
+#modal-acty-cong .home{
+    color: #fe4308;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+#modal-acty-pending a,
+#modal-acty-cong a{
+    color: #fe4308;  
+    text-decoration: underline;
+    font-size: 20px;
+    padding-bottom: 1px;
+    font-weight: 500;
+}
+
+#modal-acty-pending .sub-title,
+#modal-acty-cong .sub-title{
+    font-size: 18px;
+}
+
+#modal-acty-cong .email,
+#modal-acty-cong .phone{
+    color: #fe4308;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+#modal-acty-cong .app-store,
+#modal-acty-cong .goo-play{
+    height: 4rem;
+}
+
+#push_everything{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+ul.my-activity{ display: table; margin-top: 1rem;}
+ul.my-activity li{display: table-cell; padding-right: 30px; white-space: nowrap;}
+ul.my-activity li p {margin: 0;}
+
+.top-0 {
+    top: 0
+}
+
+.text-lg {
+    font-size: 1.125rem
+}
+
+.text-xl {
+    font-size: 1.25rem
+}
+
+.text-2xl {
+    font-size: 1.5rem
+}
+
+.text-3xl {
+    font-size: 1.875rem
+}
+
+.text-4xl {
+    font-size: 2.25rem
+}
+
+.right-0 {
+    right: 0
+}
+
+.rounded {
+    border-radius: $border-radius;
+}
+
+.rounded-md {
+    border-radius: $border-radius * 1.5;
+}
+
+.rounded-lg {
+    border-radius: $border-radius * 2;
+}
+
+.rounded-full {
+    border-radius: 9999px
+}
+
+.left-0 {
+    left: 0
+}
+
+.w-40-p{ width: 40%;}
+.w-60-p{width: 60%;}
+.w-full {
+    width: 100%
+}
+
+.w-m-80px {
+    width: calc(100% - 200px);
+}
